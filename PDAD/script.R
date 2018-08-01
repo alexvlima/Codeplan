@@ -87,4 +87,9 @@ tabela <-
 # head(tabela)
 # sum(tabela$populacao)
 
+tabela <- 
+  tabela %>%
+  spread(sexo, populacao)
+# head(tabela)
+
 write.csv2(tabela, '20180801-Populacao-por-RA-sexo-faixa_et.csv', row.names = FALSE)
